@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Meal Prep</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">FAQS</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="main">
+
+
+        <div id="shopping" class="store">
+            <h1>Menu</h1>
+        </div>
+
+
+        <div class="right-side">
+            <div id="cart" class="store">
+                <h1>Shopping Cart</h1>
+                <p></p>
+
+            </div>
+
+            <div id="remove">
+                <h1>Drag here to remove</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script id="entry-template" type="text/x-handlebars-template">
+        <li>
+            <img class="picture" src="{{img}}" height="70" width="70">
+            <h2 class="shop">{{food}}<h2>
+          <p class="shop">${{price}}</p>
+          <span></span>
+          <h3></h3>
+        </li>
+ </script>
+ <script src="main.js"></script>
+</body>
+</html>
